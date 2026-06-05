@@ -1,0 +1,152 @@
+{
+  "start_time": "10:00",
+  "end_time": "23:30",
+  "step_minutes": 30,
+  "reminder_window_minutes": 30,
+  "long_work_threshold_minutes": 120,
+
+  "grid_size": 100,
+  "minutes_per_unit": 0.2,
+
+  "user_mood": "not_stressed",
+  "stress_weights": {
+    "activity": 0.4,
+    "mood": 0.6
+  },
+  "mood_events": [
+    {"time": "13:30", "mood": "not_stressed"},
+    {"time": "22:00", "mood": "neutral"}
+  ],
+
+  "start_location": "home",
+  "start_coordinate": [15, 45],
+
+  "named_locations": {
+    "home":          [15, 45],
+    "campus_cafe":   [48, 68],
+    "supermarket":   [25, 35],
+    "gym":           [40, 55],
+    "park":          [30, 58],
+    "cinema":        [33, 38],
+    "friends_flat":  [20, 52],
+    "campus_pitch":  [58, 72]
+  },
+
+  "fixed_events": [
+    {
+      "title": "Brunch with flatmates",
+      "start": "11:30",
+      "end": "13:00",
+      "location": "campus_cafe",
+      "coordinate": [48, 68]
+    },
+    {
+      "title": "5-a-side football",
+      "start": "16:00",
+      "end": "17:30",
+      "location": "campus_pitch",
+      "coordinate": [58, 72]
+    },
+    {
+      "title": "Movie night at Jess's",
+      "start": "20:00",
+      "end": "22:30",
+      "location": "friends_flat",
+      "coordinate": [20, 52]
+    }
+  ],
+
+  "flexible_tasks": [
+    {
+      "title": "Weekly grocery shop",
+      "deadline": "today 20:00",
+      "estimated_minutes": 35,
+      "importance": "medium",
+      "urgency": "high",
+      "category": "errands",
+      "location": "supermarket",
+      "coordinate": [25, 35],
+      "base_minutes": {
+        "home": 35,
+        "supermarket": 25
+      }
+    },
+    {
+      "title": "Read 2 chapters for Monday's seminar",
+      "deadline": "tomorrow 22:00",
+      "estimated_minutes": 50,
+      "importance": "medium",
+      "urgency": "medium",
+      "category": "academics",
+      "location": "anywhere"
+    },
+    {
+      "title": "Tidy up the flat",
+      "deadline": "none",
+      "estimated_minutes": 30,
+      "importance": "low",
+      "urgency": "low",
+      "category": "maintenance",
+      "location": "home",
+      "coordinate": [15, 45]
+    },
+    {
+      "title": "Call grandparents",
+      "deadline": "today 17:00",
+      "estimated_minutes": 20,
+      "importance": "high",
+      "urgency": "medium",
+      "category": "personal",
+      "location": "anywhere"
+    },
+    {
+      "title": "Fix bike's flat tyre",
+      "deadline": "none",
+      "estimated_minutes": 25,
+      "importance": "low",
+      "urgency": "low",
+      "category": "maintenance",
+      "location": "home",
+      "coordinate": [15, 45]
+    },
+    {
+      "title": "Upload photos from last week's trip",
+      "deadline": "none",
+      "estimated_minutes": 15,
+      "importance": "low",
+      "urgency": "low",
+      "category": "personal",
+      "location": "anywhere"
+    }
+  ],
+
+  "hobbies": [
+    {
+      "title": "Go for a run in the park",
+      "estimated_minutes": 30,
+      "category": "restorative",
+      "location": "park",
+      "coordinate": [30, 58]
+    },
+    {
+      "title": "Play guitar",
+      "estimated_minutes": 25,
+      "category": "restorative",
+      "location": "home",
+      "coordinate": [15, 45]
+    },
+    {
+      "title": "Bake cookies",
+      "estimated_minutes": 40,
+      "category": "entertainment",
+      "location": "home",
+      "coordinate": [15, 45]
+    },
+    {
+      "title": "Watch YouTube",
+      "estimated_minutes": 20,
+      "category": "entertainment",
+      "location": "anywhere"
+    }
+  ]
+}

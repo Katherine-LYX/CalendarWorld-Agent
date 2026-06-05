@@ -1,0 +1,151 @@
+{
+  "start_time": "7:30",
+  "end_time": "23:00",
+  "step_minutes": 30,
+  "reminder_window_minutes": 30,
+  "long_work_threshold_minutes": 90,
+
+  "grid_size": 100,
+  "minutes_per_unit": 0.2,
+
+  "user_mood": "stressed",
+  "stress_weights": {
+    "activity": 0.4,
+    "mood": 0.6
+  },
+  "mood_events": [
+    {"time": "11:00", "mood": "slightly_stressed"},
+    {"time": "15:00", "mood": "stressed"},
+    {"time": "20:30", "mood": "neutral"}
+  ],
+
+  "start_location": "home",
+  "start_coordinate": [15, 45],
+
+  "named_locations": {
+    "home":          [15, 45],
+    "exam_hall":     [60, 78],
+    "lecture_hall":  [52, 72],
+    "library":       [55, 65],
+    "campus_cafe":   [48, 68],
+    "supermarket":   [25, 35],
+    "gym":           [40, 55],
+    "park":          [30, 58]
+  },
+
+  "fixed_events": [
+    {
+      "title": "Mathematics final exam",
+      "start": "09:00",
+      "end": "11:00",
+      "location": "exam_hall",
+      "coordinate": [60, 78]
+    },
+    {
+      "title": "Study group with coursemates",
+      "start": "13:00",
+      "end": "14:30",
+      "location": "library",
+      "coordinate": [55, 65]
+    },
+    {
+      "title": "Physics review session",
+      "start": "15:00",
+      "end": "17:00",
+      "location": "lecture_hall",
+      "coordinate": [52, 72]
+    },
+    {
+      "title": "Call mum",
+      "start": "20:30",
+      "end": "21:00",
+      "location": "anywhere"
+    }
+  ],
+
+  "flexible_tasks": [
+    {
+      "title": "Submit physics coursework online",
+      "deadline": "today 16:00",
+      "estimated_minutes": 30,
+      "importance": "high",
+      "urgency": "high",
+      "category": "academics",
+      "location": "anywhere"
+    },
+    {
+      "title": "Revise for tomorrow's programming exam",
+      "deadline": "tomorrow 09:00",
+      "estimated_minutes": 120,
+      "importance": "high",
+      "urgency": "high",
+      "category": "academics",
+      "location": "anywhere"
+    },
+    {
+      "title": "Return overdue library books",
+      "deadline": "today 17:00",
+      "estimated_minutes": 10,
+      "importance": "low",
+      "urgency": "high",
+      "category": "errands",
+      "location": "library",
+      "coordinate": [55, 65]
+    },
+    {
+      "title": "Reply to group project emails",
+      "deadline": "today 23:00",
+      "estimated_minutes": 15,
+      "importance": "medium",
+      "urgency": "medium",
+      "category": "academics",
+      "location": "anywhere"
+    },
+    {
+      "title": "Buy energy drinks and snacks",
+      "deadline": "none",
+      "estimated_minutes": 15,
+      "importance": "low",
+      "urgency": "low",
+      "category": "errands",
+      "location": "supermarket",
+      "coordinate": [25, 35],
+      "base_minutes": {
+        "home": 10,
+        "supermarket": 5
+      }
+    },
+    {
+      "title": "Do laundry",
+      "deadline": "none",
+      "estimated_minutes": 40,
+      "importance": "low",
+      "urgency": "low",
+      "category": "maintenance",
+      "location": "home",
+      "coordinate": [15, 45]
+    }
+  ],
+
+  "hobbies": [
+    {
+      "title": "Walk around the park",
+      "estimated_minutes": 15,
+      "category": "restorative",
+      "location": "park",
+      "coordinate": [30, 58]
+    },
+    {
+      "title": "Listen to a podcast",
+      "estimated_minutes": 20,
+      "category": "restorative",
+      "location": "anywhere"
+    },
+    {
+      "title": "Scroll social media",
+      "estimated_minutes": 10,
+      "category": "entertainment",
+      "location": "anywhere"
+    }
+  ]
+}
